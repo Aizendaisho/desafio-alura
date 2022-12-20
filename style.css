@@ -1,0 +1,133 @@
+:root {
+    --color-principal: #0A3871;
+    --color-secundario: #E9ECF8;
+    --color-boton: #AAB2D5;
+    --color-font: #343A40;
+    --color-font-secondary: #495057;
+    
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-secundario);
+    
+}
+
+
+
+.contenedor-principal{
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.textarea-1{
+    background: transparent;
+    border:none;
+    resize: none;
+    font-size: 1.5rem;
+    color: var(--color-principal);
+}
+.textarea-1:focus {
+    outline: none;
+}
+
+.textarea-1::placeholder{
+    color: var(--color-principal);
+    font-size: 1.5rem;
+}
+.contenedor-imagen{
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    
+}
+.imagen-encriptado{
+    width: 100%;
+}
+.texto-encriptado{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-font);
+}
+.texto-1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.texto-2{
+    text-align: center;
+
+}
+
+
+.parrafo-contenedor{
+    display: grid;
+    gap: 2rem;
+    
+}
+
+.parrafo-span{
+    display:flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    
+
+}
+
+.span1{
+
+    background-color: black;
+    color:white;
+    
+    padding:5px 10px 5px 10px;
+    border-radius: 100%;
+    
+
+}
+
+button{
+    
+    padding: 10px 30px 10px 30px;;
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 3rem;
+}
+
+
+.boton-1{
+    background-color: var(--color-principal);
+    color:white;
+    border-color: var(--color-principal);
+    
+
+}
+
+.boton-2{
+    background-color: var(--color-boton);
+    color: var(--color-principal);
+    border-color: var(--color-principal);
+    
+    
+}
