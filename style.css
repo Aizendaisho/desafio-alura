@@ -27,10 +27,23 @@ body{
 
 .contenedor-principal{
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 2rem;
 
+}
+
+.a-alura {
+    height: 5rem;
+
+}
+
+.contenedor-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 .textarea-1{
     background: transparent;
@@ -38,6 +51,7 @@ body{
     resize: none;
     font-size: 1.5rem;
     color: var(--color-principal);
+    margin-top: 1em;
 }
 .textarea-1:focus {
     outline: none;
@@ -49,11 +63,12 @@ body{
 }
 .contenedor-imagen{
     background-color: white;
-    height: 90%;
-    width: 30%;
+    height: 105%;
+        width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 15px;
@@ -64,6 +79,7 @@ body{
 }
 .texto-encriptado{
     display: grid;
+    place-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
     color: var(--color-font);
@@ -72,17 +88,22 @@ body{
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
+    width: 70%;
 
 }
 .texto-2{
     text-align: center;
+    width: 70%;
 
 }
 
 
 .parrafo-contenedor{
-    display: grid;
+    display: flex;
+        flex-direction: column;
     gap: 2rem;
+    align-items: flex-start;
+        justify-content: flex-start;
     
 }
 
@@ -90,7 +111,7 @@ body{
     display:flex;
     padding: 1rem;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 0.5rem;
     
 
@@ -99,20 +120,31 @@ body{
 .span1{
 
     background-color: black;
-    color:white;
-    
+    color: white;
     padding:5px 10px 5px 10px;
     border-radius: 100%;
     
 
 }
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
 
 button{
     
     padding: 10px 30px 10px 30px;;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     width: 18rem;
     height: 3rem;
+    cursor: pointer;
+    }
+    
+    .botons {
+        display: flex;
+        gap: 2rem;
 }
 
 
@@ -130,4 +162,12 @@ button{
     border-color: var(--color-principal);
     
     
+}
+.grid-span-2 {
+    grid-column: span 2;
+
+}
+
+.grid-span-row-2 {
+    grid-row: span 2;
 }

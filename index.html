@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script defer src="index.js"></script>
 </head>
 <body>
 
     <div class="contenedor-principal">
-        <div class="contenedor-img">
-            <img src="./img/cha.png" alt="" srcset="">
+        <div class="contenedor-img grid-span-row-2">
+            <img class="a-alura" src="./img/cha.png" alt="" srcset="">
         </div>
-        <textarea class="textarea-1" name="" id="" cols="30" rows="10" placeholder="Ingrese texto Aqui"></textarea>
-        <div class="contenedor-imagen">
+        <textarea class="textarea-1 " name="" id="" cols="30" rows="10" placeholder="Ingrese texto Aqui"></textarea>
+        <div class="contenedor-imagen grid-span-2 grid-span-row-2">
             <img class="imagen-encriptado" src="./img/Screenshot from 2022-12-20 14-57-26.png" alt="" srcset="">
             <div class="texto-encriptado">
                 <p class=" texto-1">Ningun mensaje fue encontrado</p>
@@ -27,8 +28,11 @@
 
                 <div class=" parrafo-span"><div class="span1">!</div> Solo letras minusculas y sin acentos</div>
             </div>
-            <button class="boton-1">Encriptar</button>
-            <button class="boton-2">Desencriptar</button>
+            <div class="botons">
+
+                <button class="boton-1">Encriptar</button>
+                <button class="boton-2">Desencriptar</button>
+            </div>
         </div>
 
 
