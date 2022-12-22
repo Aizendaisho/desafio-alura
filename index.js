@@ -77,9 +77,7 @@ const ENCRYPT_MAPPINGS = [
   
   //Addevent del encriptado 
   encrintar.addEventListener("click", () => {
-    console.log(texto)
     const encrypted = encrypt(texto.value)
-    console.log(encrypted);
     textArea.innerHTML = encrypted
     contenedor.innerHTML= ""
     contenedor.appendChild(contenedorEncriptado);
@@ -89,9 +87,7 @@ const ENCRYPT_MAPPINGS = [
 
   //Addevent del desencriptado
   descrintar.addEventListener("click", () => {
-    console.log(texto)
     const encrypted = decrypt(texto.value)
-    console.log(encrypted);
     textArea.innerHTML = encrypted
     contenedor.innerHTML= ""
     contenedor.appendChild(contenedorEncriptado);
