@@ -271,5 +271,38 @@ button{
     .textarea-1{
         padding-top: 5rem;
     }
+  .botons {
+
+      gap: 1rem;
+  }
 
   }
+
+  @media screen and (max-width: 426px) {
+
+
+      .botons {
+
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+      }
+
+      .parrafo-span {
+          font-size: 0.8rem;
+      }
+
+      .textarea-1 {
+          width: 50%;
+      }
+
+      .contenedor-imagen {
+          width: 70%;
+      }
+
+      .botones {
+          padding-bottom: 3rem;
+      }
+
+}
