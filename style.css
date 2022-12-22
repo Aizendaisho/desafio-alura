@@ -36,14 +36,15 @@ body{
 }
 
 .a-alura {
-    height: 5rem;
+    height: 3rem;
+    margin-bottom: 2rem;
 
 }
 
 .contenedor-img {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: start;
 }
 .textarea-1{
     background: transparent;
@@ -64,7 +65,7 @@ body{
 .contenedor-imagen{
     background-color: white;
     height: 100%;
-        width: 20em;
+    width: 20em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,10 +101,10 @@ body{
 
 .parrafo-contenedor{
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-        justify-content: flex-start;
+    justify-content: flex-start;
     
 }
 
@@ -229,9 +230,10 @@ button{
     .contenedor-img {
         display: grid;
         align-self: center;
-        place-self: start;
-        width: 50%;
+        place-self: center;
+        width: 55%;
         height: 10%;
+        padding-bottom: 2rem;
       
         
       
@@ -239,6 +241,7 @@ button{
 
     .a-alura {
         height: 2rem;
+        margin: 0;
     
     }
 
@@ -264,5 +267,9 @@ button{
         gap: 0.5rem;
     }
 
+
+    .textarea-1{
+        padding-top: 5rem;
+    }
 
   }
