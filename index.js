@@ -15,9 +15,8 @@ contenedorEncriptado.classList.add("contenedor-encriptado")
 contenedorEncriptado.appendChild(textArea)
 contenedorEncriptado.appendChild(buttonCopiar)
 textArea.id ="texto"
-
-
-
+textArea.cols= 30;
+textArea.rows =10;
 buttonCopiar.addEventListener("click",()=>{
     const text =document.getElementById("texto")
     console.log("hola")
